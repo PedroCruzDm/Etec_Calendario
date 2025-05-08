@@ -1,0 +1,5 @@
+Dependências Necessárias:
+Moment.js:  npm install moment
+React Big Calendar:  npm install react-big-calendar
+React Modal:  npm install react-modal
+firebase: npm install firebase

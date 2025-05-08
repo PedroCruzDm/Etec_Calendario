@@ -1,0 +1,31 @@
+
+/*Calendario*/
+.calendario{
+    height: 900px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*tool btn header*/
+.rbc-toolbar{}
+
+.rbc-btn-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.rbc-toolbar-label{
+    font-size: 30px;
+    font-weight: bold;
+    color: #1371af;
+}
+.rbc-toolbar button{
+    background-color: #1371af;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

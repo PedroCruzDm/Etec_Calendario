@@ -1,0 +1,55 @@
+import { collection, getDocs } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+import { db } from '../FireBase/firebaseconfig.js';
+
+export const eventos = [
+  {
+    id: 1,
+    title: 'Primeiro evento fisico',
+    start: new Date(2025, 3, 1, 10, 0),
+    end: new Date(2025, 3, 1, 24, 0),
+    color: '#ae00ff',
+    type: 'evento teste',
+    important: "teste",
+    desc: 'Primeiro calendário teste no (código react)',
+  },
+  {
+    id: 2,
+    title: 'Feira do Empreendedor',
+    start: new Date(2025, 4, 10, 10, 0),
+    end: new Date(2025, 4, 10, 24, 0),
+    color: 'orange',
+    type: 'Entrega do Projeto',
+    important: "urgente",
+    desc: 'Feira do Empreendedor, apresentação do Calendário',
+  },
+];
+
+export const fetchEventos = async () => {
+  try {
+    const eventosRef = collection(db, "eventos");
+    const snapshot = await getDocs(eventosRef);
+
+    // Exemplo para iterar sobre todos os docs da collection
+    const eventosFirestore = [];
+    snapshot.docs.forEach((docSnap) => {
+      const data = docSnap.data();
+
+      eventosFirestore.push({
+        id: docSnap.id, // Id do documento
+        title: data.title,
+        start: new Date(data.start), // Convertendo a data para um objeto Date
+        end: new Date(data.end), // Convertendo a data para um objeto Date
+        color: data.color,
+        type: data.type,
+        important: data.important,
+        desc: data.desc,
+      });
+    });
+
+    // Retorna todos os eventos do Firestore mais os eventos locais (se existirem)
+    return [...eventos, ...eventosFirestore];
+  } catch (error) {
+    console.error("Erro ao buscar eventos do Firestore:", error);
+    return eventos;
+  }
+};

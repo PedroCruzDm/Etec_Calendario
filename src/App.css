@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App_Calendario{
+  flex-direction: column;
+  align-items: 'center';
+  justify-content: 'center';
+  width: '100%';
+  height: '100%';
+  height: '100vh';
+}
+
+.divisoria_2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div-cursos-titulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 99%;
+  border: black solid 4px;
+  background-color: #afafaf;
+}
+
+.div-cursos-tabela {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+}
+
+.div-cursos-tabela table {
+  width: 100%;
+  height: 100%;
+  border: solid 4px black;
+}
+
+.div-cursos-tabela table tr {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+}
+
+.Logo-div {
+  padding: 20px;
+  justify-content: flex-end;
+  display: flex;
+  gap: 20px; /* Adds equal spacing between items */
+}
+
+.Logo-etec {
+  max-width: 100%; /* Ensures the logo does not exceed the container width */
+  height: auto; /* Maintains aspect ratio */
+  margin-left: 5%;
+  width: 200px; /* Reduced size */
+  height: 80px; /* Reduced size */
+}
+
+@media (max-width: 768px) {
+  .Logo-div {
+    justify-content: center; /* Centers the logo on smaller screens */
+    padding: 10px;
+    flex-direction: column; /* Makes the logos stack in a column */
+    align-items: center; /* Centers the logos in the column */
+    gap: 10px; /* Adjusts spacing between items in the column */
+  }
+
+  .Logo-etec {
+    width: 90%; /* Further adjusts size for smaller screens */
+    height: auto; /* Maintains aspect ratio */
+    margin-left: 0; /* Removes unnecessary margin */
+  }
+}
+
+@media (max-width: 768px) {
+  .div-cursos-tabela {
+    margin-bottom: 10%;
+  }
+
+  .div-cursos-tabela table {
+    font-size: 0.9rem;
+  }
+
+  .div-cursos-tabela table tr {
+    font-weight: normal;
+  }
+}
