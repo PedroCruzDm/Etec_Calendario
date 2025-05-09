@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/teste/static/css/main.a4322f3a.css",
-    "main.js": "/teste/static/js/main.e9421e64.js",
-    "static/js/453.81d9b022.chunk.js": "/teste/static/js/453.81d9b022.chunk.js",
-    "index.html": "/teste/index.html",
-    "main.a4322f3a.css.map": "/teste/static/css/main.a4322f3a.css.map",
-    "main.e9421e64.js.map": "/teste/static/js/main.e9421e64.js.map",
-    "453.81d9b022.chunk.js.map": "/teste/static/js/453.81d9b022.chunk.js.map"
+    "main.css": "//pedrocruzdm.github.io/Etec_Calendario/static/css/main.a4322f3a.css",
+    "main.js": "//pedrocruzdm.github.io/Etec_Calendario/static/js/main.6c68d6e6.js",
+    "static/js/453.81d9b022.chunk.js": "//pedrocruzdm.github.io/Etec_Calendario/static/js/453.81d9b022.chunk.js",
+    "index.html": "//pedrocruzdm.github.io/Etec_Calendario/index.html",
+    "main.a4322f3a.css.map": "//pedrocruzdm.github.io/Etec_Calendario/static/css/main.a4322f3a.css.map",
+    "main.6c68d6e6.js.map": "//pedrocruzdm.github.io/Etec_Calendario/static/js/main.6c68d6e6.js.map",
+    "453.81d9b022.chunk.js.map": "//pedrocruzdm.github.io/Etec_Calendario/static/js/453.81d9b022.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a4322f3a.css",
-    "static/js/main.e9421e64.js"
+    "static/js/main.6c68d6e6.js"
   ]
 }
