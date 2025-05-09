@@ -1,24 +1,37 @@
 # Calendário ETEC
 
 ## 📋 Sobre o Projeto
-O Calendário ETEC é um sistema desenvolvido para gerenciar e visualizar eventos, atividades e datas importantes relacionadas à ETEC (Escola Técnica Estadual).
+O Calendário ETEC é um sistema web desenvolvido para gerenciar e visualizar eventos, atividades e datas importantes relacionadas à ETEC (Escola Técnica Estadual). O projeto utiliza React.js como framework principal e oferece uma interface moderna e responsiva para gerenciamento de calendário escolar.
 
 ## 🚀 Funcionalidades
-- Visualização de calendário mensal
-- Gerenciamento de eventos
-- Registro de atividades escolares
-- Interface intuitiva e responsiva
+- Visualização de calendário mensal com React Big Calendar
+- Gerenciamento de eventos e atividades escolares
+- Interface drag-and-drop para manipulação de eventos
+- Modal para criação e edição de eventos
+- Integração com Firebase para persistência de dados
+- Design responsivo e moderno
 
 ## 🛠️ Tecnologias Utilizadas
-- HTML5
-- CSS3
-- JavaScript
-- [Outras tecnologias relevantes serão adicionadas conforme o desenvolvimento]
+- **Frontend:**
+  - React.js 19.1.0
+  - React Big Calendar 1.18.0
+  - React DnD (Drag and Drop) 16.0.1
+  - React Modal 3.16.3
+  - React JSS 10.10.0
+  - Moment.js 2.30.1
+
+- **Backend:**
+  - Firebase 11.6.0
+
+- **Ferramentas de Desenvolvimento:**
+  - React Scripts 5.0.1
+  - Jest para testes
+  - ESLint para linting
 
 ## 📦 Instalação
 1. Clone o repositório
 ```bash
-git clone [URL do repositório]
+git clone https://github.com/PedroCruzDm/Etec_Calendario.git
 ```
 
 2. Navegue até o diretório do projeto
@@ -26,7 +39,25 @@ git clone [URL do repositório]
 cd Etec_Calendario
 ```
 
-3. Abra o arquivo `index.html` em seu navegador
+3. Instale as dependências
+```bash
+npm install
+```
+
+4. Inicie o projeto em modo de desenvolvimento
+```bash
+npm start
+```
+
+## 🏗️ Estrutura do Projeto
+```
+src/
+├── components/     # Componentes React reutilizáveis
+├── hooks/         # Custom hooks
+├── App.js         # Componente principal
+├── index.js       # Ponto de entrada da aplicação
+└── ...
+```
 
 ## 🤝 Como Contribuir
 1. Faça um Fork do projeto
@@ -36,10 +67,10 @@ cd Etec_Calendario
 5. Abra um Pull Request
 
 ## 📝 Licença
-Este projeto está sob a licença [inserir tipo de licença].
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE.txt](LICENSE.txt) para mais detalhes.
 
 ## ✒️ Autores
-- [Seu nome] - [Seu email/contato]
+- HubMaia - tecmaia7@gmail.com
 
 ---
 Desenvolvido com ❤️ para a comunidade ETEC 
