@@ -69,8 +69,11 @@ src/
 ## 📝 Licença
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE.txt](LICENSE.txt) para mais detalhes.
 
-## ✒️ Autores
-- HubMaia - tecmaia7@gmail.com
+## ✒️ 
+- PedroCruzDm - joaope14dro@gmail.com
+- HubMaia - tecmaia7@gmail.com 
+- Resett - pietrogoncalvesaraujo1301@gmail.com
+- GRNSz - gugzribeiro@gmail.com
 
 ---
 Desenvolvido com ❤️ para a comunidade ETEC 
